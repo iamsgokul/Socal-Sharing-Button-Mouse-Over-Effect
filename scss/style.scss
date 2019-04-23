@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+p a {
+    text-decoration: none;
+    color: #bb3d6c;
+}
+
+.share-btn {
+    border-radius: 25px;
+    width: 220px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ecedea;
+    margin: 5% auto 3%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .5s;
+
+    &:after {
+        width: 220px;
+        height: 50px;
+        background-color: #1b1b1b;
+        position: absolute;
+        content: 'Share';
+        color: #ffffff;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: 1s;
+        border-radius: 25px;
+    }
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+
+        &:after {
+            left: -225px;
+        }
+
+        button {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1, 1);
+
+            &:first-child {
+                transition-delay: .8s;
+            }
+
+            &:nth-child(2) {
+                transition-delay: .6s;
+            }
+
+            &:nth-child(3) {
+                transition-delay: .4s;
+            }
+
+            &:nth-child(4) {
+                transition-delay: .2s;
+            }
+        }
+    }
+
+    button {
+        border: 0;
+        background-color: #ecedea;
+        padding: 10px;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(.5, .5);
+        transition: .5s;
+        outline: none;
+
+        i {
+            color: #1b1b1b;
+            font-size: 25px;
+        }
+
+        &:first-child {
+            transition-delay: .0s;
+        }
+
+        &:nth-child(2) {
+            transition-delay: .1s;
+        }
+
+        &:nth-child(3) {
+            transition-delay: .1s;
+        }
+
+        &:nth-child(4) {
+            transition-delay: .2s;
+        }
+    }
+}

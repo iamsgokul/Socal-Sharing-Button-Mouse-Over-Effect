@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+p {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+p a {
+  text-decoration: none;
+  color: #bb3d6c;
+}
+
+.share-btn {
+  border-radius: 25px;
+  width: 220px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ecedea;
+  margin: 5% auto 3%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: .5s;
+}
+.share-btn:after {
+  width: 220px;
+  height: 50px;
+  background-color: #1b1b1b;
+  position: absolute;
+  content: 'Share';
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 1s;
+  border-radius: 25px;
+}
+.share-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+.share-btn:hover:after {
+  left: -225px;
+}
+.share-btn:hover button {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.share-btn:hover button:first-child {
+  transition-delay: .8s;
+}
+.share-btn:hover button:nth-child(2) {
+  transition-delay: .6s;
+}
+.share-btn:hover button:nth-child(3) {
+  transition-delay: .4s;
+}
+.share-btn:hover button:nth-child(4) {
+  transition-delay: .2s;
+}
+.share-btn button {
+  border: 0;
+  background-color: #ecedea;
+  padding: 10px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+  transition: .5s;
+  outline: none;
+}
+.share-btn button i {
+  color: #1b1b1b;
+  font-size: 25px;
+}
+.share-btn button:first-child {
+  transition-delay: .0s;
+}
+.share-btn button:nth-child(2) {
+  transition-delay: .1s;
+}
+.share-btn button:nth-child(3) {
+  transition-delay: .1s;
+}
+.share-btn button:nth-child(4) {
+  transition-delay: .2s;
+}
